@@ -1,32 +1,28 @@
 package com.telusko;
-
+import java.beans.ConstructorProperties;
 public class Alien {
     private int age;
-    private Laptop lap;
+    private Computer com;
 
     Alien(){
-        System.out.println("Alien object Created");
+        System.out.println("Alien obj created");
     }
-
-    public Laptop getLap() {
-        return lap;
+    public Computer getCom() {
+        return com;
     }
-
-    public void setLap(Laptop lap) {
-        System.out.println("laptop setter called");
-        this.lap = lap;
+    public void setCom(Computer com) {
+        this.com = com;
     }
     public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
-        System.out.println("age setter called");
         this.age = age;
     }
 
     public void code(){
         System.out.println("Coding...");
-        lap.compile();
+        com.compile();
     }
 }
